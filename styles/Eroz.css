@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#landing {
+  background-color: white;
+  background-image: url("../images/landscape.jpg");
+  background-position: top center;
+  background-size: cover;
+  height: 100vh;
+}
+#landing .white-blur {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+}
+#landing #login {
+  background-color: white;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
