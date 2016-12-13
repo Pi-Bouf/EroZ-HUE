@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/Eroz.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="scripts/facebook.js"></script>
     <script src="scripts/jshue.min.js"></script>
     <script src="scripts/miw.js"></script>
     <script src="scripts/Eroz.min.js"></script>
@@ -38,11 +39,12 @@
                                 <button class="btn waves-effect deep-orange darken-4" type="submit" name="action">Connexion</button>
                             </div>
                         </div>
-                        <div class="row center-align">
-                            <a href="#!" class="btn blue darken-4">
+                        <div id="faceLogin" class="row center-align">
+                            <div class="btn blue darken-2" onclick="checkLoginState();">
                                 <span class="mdi mdi-facebook-box" style="font-size: 30px; margin-right: 10px;"></span>
-                            </a>
+                            </div>
                         </div>
+                        <div id="loginStatus" class="row center-align"></div>
                     </form>
                 </div>
             </div>
