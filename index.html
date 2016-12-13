@@ -4,10 +4,13 @@
 <head>
     <title>EroZ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/1.7.22/css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/Eroz.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script src="scripts/jshue.min.js"></script>
+    <script src="scripts/miw.js"></script>
     <script src="scripts/Eroz.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 </head>
@@ -17,7 +20,7 @@
         <div class="white-blur valign-wrapper">
             <div id="login" class="valign">
                 <div class="row">
-                    <form class="col s12">
+                    <form class="col s12" method="post" action="index.html">
                         <div class="row">
                             <div class="input-field col s12">
                                 <input id="email" type="email" class="validate">
@@ -29,6 +32,16 @@
                                 <input id="password" type="password" class="validate">
                                 <label for="password">Password</label>
                             </div>
+                        </div>
+                        <div class="row center-align">
+                            <div class="input-field col s12">
+                                <button class="btn waves-effect deep-orange darken-4" type="submit" name="action">Connexion</button>
+                            </div>
+                        </div>
+                        <div class="row center-align">
+                            <a href="#!" class="btn blue darken-4">
+                                <span class="mdi mdi-facebook-box" style="font-size: 30px; margin-right: 10px;"></span>
+                            </a>
                         </div>
                     </form>
                 </div>

@@ -1,5 +1,11 @@
-/*
 window.onload = function() {
+
+    $('.collapsible-header').click(function() {
+        alert("ok");
+    });
+
+
+    /*
     var buddy = document.getElementById('buddy');
 
     buddy.onclick = function() {
@@ -17,16 +23,15 @@ window.onload = function() {
             }
         };
         req.send(null);
-    }
+    }*/
 
 }
 
+/*
 var hue = jsHue();
 var user = null;
 var bridge = hue.bridge('139.124.142.59');
 bridge.createUser('MIWApp', function(data) {
     user = bridge.user("386ca59e5b0e3673fa2b3b21c0b118b")
     user.setLightState(1, { on: true }, function(data) { console.log("Eteint !") });
-});
-
-*/
+}); */

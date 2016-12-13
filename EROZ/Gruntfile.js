@@ -10,7 +10,14 @@ module.exports = function(grunt) {
                 files: {
                     '../scripts/<%= pkg.name %>.min.js': ['sources/scripts/<%= pkg.name %>.js'],
                     '../scripts/jshue.min.js': ['sources/scripts/jshue.js'],
+                    '../scripts/miw.min.js': ['sources/scripts/miw.js'],
                 }
+            }
+        },
+        watch: {
+            js: {
+                files: ['sources/scripts/*.js'],
+                tasks: ['uglify:build']
             }
         },
         compass: {
@@ -46,6 +53,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['compass:watch']);
     grunt.registerTask('prod', ['uglify', 'compass:dev', 'imagemin']);
